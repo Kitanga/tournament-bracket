@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Aldrich';
+    src: url("Aldrich-Regular.ttf");
+}
+
+#game canvas,
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    /* background-color: #0d131c; */
+    background-color: black;
+}
+
+#playersList,
+#game canvas {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* background-color: black; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: default;
+    z-index: 0;
+    /* border: 2px solid black; */
+}
+
+#game {
+    position: relative;
+    width: 52%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #04152f;
+}
+
+#playersList {
+    color: #7fa5dd;
+    padding: 7%;
+    width: 92%;
+    height: 92%;
+    font-family: 'Aldrich', sans-serif;
+    /* background-color: #000000; */
+}
+
+#buttons {
+    padding-right: 2.8%;
+    padding-left: 1.4%;
+}
+
+.listPanels {
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow-y: auto;
+    border-top: 1px solid #7fa5dd;
+}
+
+.actionInline {
+    margin-bottom: 7px;
+    -webkit-appearance: none;
+    border: 1px solid #7fa5dd;
+    background-color: #082f67;
+    color: #7fa5dd;
+}
+
+#removeContenderBtn {
+    margin-right: 7px;
+}
+#startTournamentBtn,
+#removeContenderBtn {
+    float: right;
+}
+#availablePlayersBtn {
+    /* clear: left; */
+    width: 48.6%;
+    border-right: 1px solid #7fa5dd;
+}
+
+#contendersList {
+    width: 48.6%;
+    padding-left: 1.4%;
+}
+
+#picPreview {
+    width: 100%;
+    height: 90%;
+}
+
+#takePhoto {
+    display: block;
+    width: 17%;
+    margin-left: auto;
+    margin-right: auto;
+}
