@@ -224,6 +224,7 @@ window.onload = function() {
         currentMatch.prevPins[0].drawFace = true;
         currentMatch.prevPins[1].drawFace = true;
 
+        /* For testing */
         var player1winner = Math.round(Math.random());
 
         if (player1winner) {
@@ -448,6 +449,8 @@ window.onload = function() {
     function startTournamentBracket() {
         canvas.hidden = false;
         playersList.hidden = true;
+
+        /* For testing */
         var i = 0,
             len = matches.length;
         var interval = setInterval(function() {
@@ -586,6 +589,8 @@ window.onload = function() {
         playersList.hidden = false;
 
         processPlayerInfo();
+
+        /* Used for testing */
         addFirst8();
 
         addContenderBtn.onclick = function() {
